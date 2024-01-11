@@ -1143,6 +1143,14 @@ video {
   background-image: url('images/snc/theme.jpg');
 }
 
+.bg-\[url\(\'\.\.\/images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
+  background-image: url('../images/{{item.set}}/theme.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
+  background-image: url('../images/snc/theme.jpg');
+}
+
 .from-emerald-950 {
   --tw-gradient-from: #022c22 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(2 44 34 / 0) var(--tw-gradient-to-position);
