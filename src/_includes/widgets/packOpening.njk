@@ -6,7 +6,7 @@
     <!--ART SECTION-->
     {% set custom_id = pack.id + "-art"%}
         <section            
-            data-background-image="/images/{{pack.set}}/theme.jpg" 
+            data-background-image="../images/{{pack.set}}/theme.jpg" 
             data-background-opacity="0.2" >
            <section 
            data-transition="zoom" 
@@ -74,7 +74,7 @@
                 set="{{ card.set | default(pack.set)}}"> 
 
                     <div class="front w-full aspect-card">
-                        <img src="/images/card_back.jpg" 
+                        <img src="../images/card_back.jpg" 
                         class="
                         {%if i.cards|length < 4 %} rounded-3xl
                         {% else %} rounded-xl
