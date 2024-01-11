@@ -1,0 +1,12 @@
+<section>
+    
+    {% include "slides/art.njk" %}
+    {% include "slides/commons.njk" %}
+    
+    {% for card in pack.focusCards %}
+        {% include "slides/focus.njk"%}
+    {% endfor %}
+
+        
+
+</section>

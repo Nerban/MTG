@@ -1,0 +1,44 @@
+---
+layout: "layouts/base.njk"
+---
+
+<div 
+class="w-10/12 mx-auto  mt-10 flex-wrap flex-row justify-evenly gap-3 flex "> 
+
+  {%for item in booster | reverse %}
+    <a class="text-rose-50 drop-shadow-md group hover:rotate-6 hover:shadow-2xl hover:scale-105 duration-200 w-1/4 font-bold my-5 flex-col flex"
+    href="packs/{{ item.id | slugify}}">
+    
+
+    <div class=" rounded-md w-full relative 
+    aspect-card outline-emerald-500 bg-emerald-900">
+    <div 
+    class="bg-[url('/images/{{item.set}}/theme.jpg')] bg-center bg-cover 
+    opacity-20 aspect-card absolute z-0 w-full rounded-md"></div>
+
+    <div class="w-11/12 mx-auto mt-1 font-mono text-lg z-10">
+    {{item.name}} - {{loop.revindex}} <br>
+    {%if "set-booster" in item.tags%}<span class="absolute font-extrathin text-emerald-400 text-xs">set-booster</span>{%endif%}
+    </div>
+    
+      <div class=" border-emerald-300/25 p-4 w-10/12 z-10 aspect-square mx-auto ">
+
+                {% include "svg/"+ item.set +".njk" %}
+
+      </div>
+      <div class="
+       grid place-content-center 
+       mx-auto z-10
+       mt-3 w-11/12 bg-emerald-950/75 
+       aspect-text-box uppercase
+       text-2xl font-mono  text-center rounded-md shadow-md  group-hover:text-rose-600">
+        <span calss="first-letter:text-3xl">open boosterpack</span>
+      </div>
+      
+    </div>
+    </a>
+    
+  {%endfor%}
+</div>
+
+<div class="hidden max-h-screen w-11/12 rotate-90"> </div>

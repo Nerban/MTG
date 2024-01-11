@@ -1,0 +1,25 @@
+
+{% set custom_id = key + "-art"%}
+   <section data-transition="zoom" data-background-image="images/theme.jpg" data-background-opacity="0.2" 
+   id="{{custom_id}}" scry="{{pack.art.id}}"> 
+        <h3 >Artwork</h3>
+        <div class="r-stack mb-5">
+            <small class="fragment fade-out " data-fragment-index="1">???</small>
+            <a target="_blank" href="#">
+                <small 
+                class="fragment fade-up title text-white hover:text-blue-200 "
+                data-fragment-index="1"></small>
+            </a>
+        </div>
+        
+        <hr class="mx-5">
+        <div class=" grid  place-items-center ">
+            <img onerror="buildArt('{{custom_id}}', '{{"images/art/art" + key + ".png"}}')"
+            class="target-image {%if pack.art.rotate%}  w-1/3 {% else %} w-2/3 {%endif%}
+            fragment custom blur shadow-xl opacity-100 rounded-3xl" 
+            data-fragment-index="1"
+            src>
+        </div>
+    </section>
+
+

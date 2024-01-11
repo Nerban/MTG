@@ -1,0 +1,12 @@
+<nav class="flex pl-12 gap-4 m-auto w-full h-full py-2  ">
+    {%for key,value in navigation %}
+    <a href="{{value}}">
+        <div class="px-4  uppercase font-mono font-semibold text-emerald-500
+            hover:text-rose-600
+            tracking-widest first-letter:text-xl  drop-shadow-sm">
+          {{key}}
+        </div>
+    </a>  
+    {% endfor %}
+</nav>
+<div class="card w-11/12 hidden text-rose-50"></div>

@@ -1,0 +1,48 @@
+---
+pagination:
+    data: booster
+    size: 1
+    alias: pack
+
+eleventyComputed:
+  title: "{{pack.id | slugify}}"
+  permalink: "packs/{{ pack.id | slugify }}.html"
+---
+
+<!doctype html>
+<header>
+  <link rel="stylesheet" href="{{ '../assets/reveal/reveal.css' | url }}" />
+  
+   <link rel="stylesheet" href="/style/style.css" />
+   <link rel="stylesheet" href="/style/magic.css" />
+   
+
+  <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css" rel="stylesheet" type="text/css" /> 
+</header>
+<title>{{ "Nerbans MTG Corner - " + title | default("Nerbans MTG Corner")}}</title>
+
+{%include "scripts/custom.njk"%}
+
+<body class="bg-emerald-950 ">
+  <div class="max-h-screen">
+  {%include "widgets/navigation.njk" %}
+  {{content | safe }}
+  </div>
+
+  
+  <script src="{{ '/assets/reveal/reveal.js' | url }}"></script>
+  <script src="{{ '/assets/reveal/plugin/highlight/highlight.js' | url }}"></script>
+  <script src="{{ '/assets/reveal/plugin/notes/notes.js' | url }}"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: false,
+      history: true,
+      slideNumber: false,
+      plugins: [ RevealNotes, RevealHighlight ],
+      embedded: true,
+    });
+  </script>
+  {%include "scripts/revealEvents.njk"%}
+
+</body>

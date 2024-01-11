@@ -1,0 +1,54 @@
+[
+    {
+        "name":"Streets of New Capenna",
+        "set":"snc",
+        "tags":["booster","snc","set-booster"],
+        "id":"snc-01",
+        "art":
+        {   
+            "foil": false,
+            "rotate": true,
+            "nr":"2",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": true,  "nr":"265", "new":true},
+                    {"foil": false, "nr":"37" , "new":true},
+                    {"foil": false, "nr":"243", "new":true},
+                    {"foil": false, "nr":"73" , "new":true},
+                    {"foil": false, "nr":"90" , "new":true},
+                    {"foil": false, "nr":"103", "new":true},
+                    {"foil": false, "nr":"127", "new":true},
+                    {"foil": false, "nr":"17" , "new":true}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"352", "new":true}
+                ]
+            },
+            {
+                "head": "Comander",
+                "cards": [
+                    {"foil": false, "nr":"6"  , "set":"ncc", "new":true }
+                ]
+            },
+            {
+                "head": "Rare",
+                "cards": [
+                    {"foil": false, "nr":"209", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"205", "new":true}
+                ]
+            }
+        ]
+        
+    }
+]
