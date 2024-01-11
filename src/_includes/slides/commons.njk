@@ -1,4 +1,4 @@
-<section data-background-image="/images/mom/art/art{{key}}.png"  data-background-opacity="0.5">
+<section data-background-image="../images/mom/art/art{{key}}.png"  data-background-opacity="0.5">
 
     <div class="w-full bg-gray-900 bg-opacity-75 pb-1">
         <h4>{{pack.commons.head}}</h4>
@@ -8,7 +8,7 @@
 
                 {%for card in pack.commons.cards%}
                 <div class="grid place-items-center r-stack shiny">
-                    <img data-fragment-index="{{loop.index + 1}}" class="fragment fade-out shadow-xl aspect-card opacity-100 rounded-xl" data-src="/images/card_back.jpg">
+                    <img data-fragment-index="{{loop.index + 1}}" class="fragment fade-out shadow-xl aspect-card opacity-100 rounded-xl" data-src="../images/card_back.jpg">
                     <div 
                     id ="{{key + "-com" + "_" + loop.index}}" 
                     scry="{{card.id}}"  
