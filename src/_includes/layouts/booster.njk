@@ -5,7 +5,7 @@ pagination:
     alias: pack
 
 eleventyComputed:
-  title: "{{pack.id | slugify}}"
+  title: "{{pack.name}} {{pack.nr}}"
   permalink: "packs/{{ pack.id | slugify }}.html"
 ---
 
