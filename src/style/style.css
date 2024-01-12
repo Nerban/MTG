@@ -1003,6 +1003,10 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
+.bg-\[url\(\'\.\.\/images\/mom\/theme\.jpg\'\)\] {
+  background-image: url('../images/mom/theme.jpg');
+}
+
 .bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
   background-image: url('../images/snc/theme.jpg');
 }

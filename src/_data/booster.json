@@ -1,7 +1,9 @@
 [
     {
         "name":"Streets of New Capenna",
+        "published":true,
         "set":"snc",
+        "nr":1,
         "tags":["booster","snc","set-booster"],
         "id":"snc-01",
         "art":
@@ -49,6 +51,109 @@
                 ]
             }
         ]
-        
+    },
+    {
+        "name":"Silvester Pack [mom]",
+        "set":"mom",
+        "nr":30,
+        "tags":["booster","mom","set-booster", "silvester"],
+        "id":"mom-30",
+        "art":
+        {   
+            "foil": false,
+            "rotate": true,
+            "nr":"53",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": true,  "nr":"269"},
+                    {"foil": false, "nr":"182" , "new":true},
+                    {"foil": false, "nr":"98", "new":true},
+                    {"foil": false, "nr":"103" , "new":true},
+                    {"foil": false, "nr":"173" , "new":true},
+                    {"foil": false, "nr":"124", "new":true},
+                    {"foil": false, "nr":"138", "new":true},
+                    {"foil": false, "nr":"49" , "new":true}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"232"}
+                ]
+            },
+            {
+                "head": "Rare Card",
+                "cards": [
+                    {"foil": false, "nr":"37"  , "set":"mul"}
+                ]
+            },
+            {
+                "head": "Showcase",
+                "cards": [
+                    {"foil": false, "nr":"310", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"246", "new":true}
+                ]
+            }
+        ]
+    },
+    {
+        "name":"Silvester Pack [mom]",
+        "set":"mom",
+        "nr":29,
+        "tags":["booster","mom","set-booster", "silvester"],
+        "id":"mom-29",
+        "art":
+        {   
+            "foil": false,
+            "rotate": true,
+            "nr":"53",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": true,  "nr":"269"},
+                    {"foil": false, "nr":"182" , "new":true},
+                    {"foil": false, "nr":"98", "new":true},
+                    {"foil": false, "nr":"103" , "new":true},
+                    {"foil": false, "nr":"173" , "new":true},
+                    {"foil": false, "nr":"124", "new":true},
+                    {"foil": false, "nr":"138", "new":true},
+                    {"foil": false, "nr":"49" , "new":true}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"232"}
+                ]
+            },
+            {
+                "head": "Rare Card",
+                "cards": [
+                    {"foil": false, "nr":"37"  , "set":"mul"}
+                ]
+            },
+            {
+                "head": "Showcase",
+                "cards": [
+                    {"foil": false, "nr":"310", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"246", "new":true}
+                ]
+            }
+        ]
     }
 ]

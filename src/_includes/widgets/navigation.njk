@@ -1,12 +1,24 @@
 <nav class="flex pl-12 gap-4 m-auto w-full h-full py-2  ">
-    {%for item in collections.sites | reverse %}
-    <a href="/MTG/{{item.url}}">
+    <a href="/MTG">
         <div class="px-4  uppercase font-mono font-semibold text-emerald-500
             hover:text-rose-600
             tracking-widest first-letter:text-xl  drop-shadow-sm">
-          {{item.data.title}}
+          Home
         </div>
     </a>  
-    {% endfor %}
+    <a href="https://nerban.github.io/Advent2023/#/">
+        <div class="px-4  uppercase font-mono font-semibold text-emerald-500
+            hover:text-rose-600
+            tracking-widest first-letter:text-xl  drop-shadow-sm">
+          Advent-Event
+        </div>
+    </a> 
+    <a href="https://nerban.github.io/Advent2023/#/0/1">
+        <div class="px-4  uppercase font-mono font-semibold text-emerald-500
+            hover:text-rose-600
+            tracking-widest first-letter:text-xl  drop-shadow-sm">
+          Silvester-Event
+        </div>
+    </a> 
 </nav>
 <div class="card w-11/12 hidden text-rose-50"></div>
