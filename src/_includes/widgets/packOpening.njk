@@ -1,7 +1,7 @@
 
 <div class="w-full flex justify-evenly 
     bg-emerald-900 bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950">
-  <div class="reveal w-11/12 mt-8 rounded-md shadow  aspect-video border-2 border-spacing-2 border-emerald-500" >
+  <div class="reveal w-11/12 mt-4 rounded-md shadow  aspect-video border-2 border-spacing-2 border-emerald-500" >
     <div class="slides">
     <!--ART SECTION-->
     {% set custom_id = pack.id + "-art"%}
@@ -60,9 +60,6 @@
 			<div class="w-full px-12 justify-evenly flex flex-wrap mb-4 my-auto basis-1/2">
 
                 {%for card in i.cards%}
-
-
-
                 <div 
                 class="
                 {%if i.cards|length < 4 %}  w-1/2 p-8

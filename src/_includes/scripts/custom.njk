@@ -82,7 +82,7 @@ function set3D_Card(id, active){
 
         Art_Title.innerHTML = myJson.card_faces[0].name + " - ["+myJson.collector_number+"/81]";
         LINK.href = myJson.scryfall_uri;
-        Art_Image.src=myJson.card_faces[0].image_uris.large
+        Art_Image.src=myJson.card_faces[0].image_uris.normal
 
         var sections = document.getElementsByClassName("CARD_SECTION")[0]
         sections.setAttribute("data-background-image") = "https://cards.scryfall.io/art_crop/front/5/e/5eab58c4-cb34-4645-aaf1-6e3010fcee69.jpg?1679451743"
