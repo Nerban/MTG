@@ -1003,12 +1003,12 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\/images\/snc\/theme\.jpg\'\)\] {
-  background-image: url('/images/snc/theme.jpg');
+.bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
+  background-image: url('../images/snc/theme.jpg');
 }
 
-.bg-\[url\(\'\/images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
-  background-image: url('/images/{{item.set}}/theme.jpg');
+.bg-\[url\(\'\.\.\/images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
+  background-image: url('../images/{{item.set}}/theme.jpg');
 }
 
 .bg-\[url\(\.\.\/images\/mom\/art\/art1\.png\)\] {
@@ -1133,22 +1133,6 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
-  background-image: url('images/{{item.set}}/theme.jpg');
-}
-
-.bg-\[url\(\'images\/snc\/theme\.jpg\'\)\] {
-  background-image: url('images/snc/theme.jpg');
-}
-
-.bg-\[url\(\'\.\.\/images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
-  background-image: url('../images/{{item.set}}/theme.jpg');
-}
-
-.bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
-  background-image: url('../images/snc/theme.jpg');
 }
 
 .from-emerald-950 {
