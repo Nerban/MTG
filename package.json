@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "eleventy --serve --quiet",
     "css": "tailwindcss -i ./src/tailwind.css -o ./src/style/style.css --watch ",
-
     "start": "eleventy --serve --quiet",
     "build": "NODE_ENV=production eleventy",
     "tidy": "prettier ./src --write"
@@ -26,6 +25,7 @@
   "main": ".eleventy.js",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.32",
