@@ -1,5 +1,6 @@
 const path = require("path");
 const prettier = require("prettier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = (config) => {
     // This enable all the dependency libraries inside the `assets` folder
@@ -12,6 +13,8 @@ module.exports = (config) => {
     // Call it using <img src="images/my-image.jpg" />
     config.addPassthroughCopy("./src/images/");
     config.addPassthroughCopy("./src/style/");
+
+    
 
     // Prettifies the output html so the indentations are correct
     config.addTransform("prettier", function (content, outputPath) {
@@ -26,6 +29,8 @@ module.exports = (config) => {
                 return content;
         }
     });
+
+    config.addPlugin(pluginRss);
 
     return {
         markdownTemplateEngine: "njk",

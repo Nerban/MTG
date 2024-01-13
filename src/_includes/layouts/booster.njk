@@ -3,10 +3,12 @@ pagination:
     data: booster
     size: 1
     alias: pack
-
+    
 eleventyComputed:
   title: "{{pack.name}} {{pack.nr}}"
   permalink: "packs/{{ pack.id | slugify }}.html"
+  tags: {{pack.tags}}
+  
 ---
 
 <!doctype html>
@@ -26,6 +28,7 @@ eleventyComputed:
 <body class="bg-emerald-950 ">
   <div class="max-h-screen">
   {%include "widgets/navigation.njk" %}
+
   {{content | safe }}
   </div>
 

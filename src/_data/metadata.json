@@ -1,0 +1,9 @@
+{
+	"feed": {
+        "title":"Title",
+		"subtitle": "Tech posts to educate, elevate, but mostly entertain.",
+		"filename": "feed.xml",
+		"path": "/rss.xml",
+		"url": "localhost:8080/rss.xml"
+	}
+}
