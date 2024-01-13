@@ -6,6 +6,7 @@
         "nr":1,
         "tags":["boosterpack","snc","set-booster"],
         "id":"snc-01",
+        "date":"2020-04-01",
         "art":
         {   
             "foil": false,
@@ -54,10 +55,12 @@
     },
     {
         "name":"Silvester Pack [mom]",
+        "published":false,
         "set":"mom",
         "nr":30,
         "tags":["boosterpack","mom","set-booster", "silvester"],
         "id":"mom-30",
+        "date":"2023-01-01",
         "art":
         {   
             "foil": false,

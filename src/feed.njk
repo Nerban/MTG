@@ -3,46 +3,46 @@
   "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Nerbans MTG Corner",
+    "title": "Nerbans Pack Openings",
     "subtitle": "New MTG booster Openings every Week",
     "url": "https://nerban.github.io/MTG/",
-    "feedUrl": "https://nerban.github.io/MTG//feed.xml",
+    "feedUrl": "https://nerban.github.io/MTG/feed.xml",
     "author": {
       "name": "Nerban",
-      "email": "me@example.com"
+      "email": "RGBlog@posteo.de"
     }
   }
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.boosterpack | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
-  
-  {%for pack in booster %}
-  {% if pack.published %}
 
-    <entry>
-    <title>{{ pack.name }}</title>
-    <link href="{{ metadata.url}}packs/{{pack.id | slugify }}"/>
-    <content type="html">Open the {{pack.nr}}. boosterpack of the {{pack.set}} set-display!</content>
-  </entry>
-  {%endif%}
-  {#{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-  <entry>
-    <title>{{ post.name }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-  </entry>#}
-  {%- endfor -%}
-</feed>
+<rss version="2.0">
+
+  <channel>
+    <title>{{metadata.title}}</title>
+    <link>{{metadata.url}}</link>
+    <description>I open a Boosterpack every week, keep track of my collection here! Discus the your favorite Cards in the Comments  </description>
+    <language>en-en</language>
+    <copyright>Nerban</copyright>
+    <pubDate>Erstellungsdatum("Tue, 8 Jul 2008 2:43:19")</pubDate>
+    <image>
+      <url>URL einer einzubindenden Grafik</url>
+      <title>Bildtitel</title>
+      <link>URL, mit der das Bild verknüpft ist</link>
+    </image>
+    {%for item in booster%}
+    {%if item.published%}
+    <item>
+      <title>{{item.name}} - {{item.nr}}</title>
+      <description>Open the {{item.nr}}. of the {{item.set}} display!</description>
+      <link>{{metadata.url}}packs/{{ item.id | slugify }}.html</link>
+      <author>{{metadata.author.name}}</author>
+      <guid>{{ item.id | slugify }}</guid>
+      <pubDate>{{item.date}}</pubDate>
+    </item>
+    {%endif%}
+    {%endfor%}
+
+  </channel>
+
+</rss>
