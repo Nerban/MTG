@@ -3,6 +3,66 @@
         "name":"Streets of New Capenna",
         "published":true,
         "set":"snc",
+        "nr":2,
+        "tags":["boosterpack","snc","set-booster"],
+        "id":"snc-02",
+        "date":"2024-01-08",
+        "art":
+        {   
+            "foil": false,
+            "rotate": false,
+            "nr":"81",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": true,  "nr":"262", "new":true},
+                    {"foil": false, "nr":"154" , "new":true},
+                    {"foil": false, "nr":"138", "new":true},
+                    {"foil": false, "nr":"125" , "new":true},
+                    {"foil": false, "nr":"139" , "new":true},
+                    {"foil": false, "nr":"185", "new":true},
+                    {"foil": false, "nr":"54", "new":true},
+                    {"foil": false, "nr":"96" , "new":true}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"77", "new":true}
+                ]
+            },
+            {
+                "head": "Showcase",
+                "cards": [
+                    {"foil": false, "nr":"319"  , "new":true }
+                ]
+            },
+            {
+                "head": "Rare",
+                "cards": [
+                    {"foil": false, "nr":"206", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"156", "new":true}
+                ]
+            },
+            {
+                "head": "Special Guest",
+                "cards": [
+                    {"foil": true,  "nr":"7", "set":"slx","new":true}
+                ]
+            }
+        ]
+    },
+    {
+        "name":"Streets of New Capenna",
+        "published":true,
+        "set":"snc",
         "nr":1,
         "tags":["boosterpack","snc","set-booster"],
         "id":"snc-01",
