@@ -46,6 +46,7 @@ module.exports = (config) => {
         markdownTemplateEngine: "njk",
         dataTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
+        pathPrefix: "/MTG/",
 
         dir: {
             input: "src",
