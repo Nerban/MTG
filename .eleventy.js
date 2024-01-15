@@ -32,6 +32,16 @@ module.exports = (config) => {
 
     config.addPlugin(pluginRss);
 
+    config.setBrowserSyncConfig({  callbacks: {ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('dist/404.html');
+        browserSync.addMiddleware("*", (req, res) => {               
+            res.write(content_404);        
+            res.end();      
+        });   
+     },  
+    },  
+    ui: false,  ghostMode: false});
+
     return {
         markdownTemplateEngine: "njk",
         dataTemplateEngine: "njk",
