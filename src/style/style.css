@@ -863,12 +863,12 @@ video {
   border-top-right-radius: 1.5rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-b-2 {
@@ -925,16 +925,16 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
+  background-image: url('../images/snc/theme.jpg');
+}
+
 .bg-\[url\(\'\.\.\/images\/\{\{item\.set\}\}\/theme\.jpg\'\)\] {
   background-image: url('../images/{{item.set}}/theme.jpg');
 }
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/images\/snc\/theme\.jpg\'\)\] {
-  background-image: url('../images/snc/theme.jpg');
 }
 
 .from-emerald-950 {
