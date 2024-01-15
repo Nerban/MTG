@@ -67,7 +67,7 @@ module.exports = {
   plugins: [Myclass],
   content: [
     // Example content paths...
-    './dist/**/*.html',
+    './docs/**/*.html',
     './src/**/*.{js,jsx,ts,tsx,njk,html}',
   ],
 }

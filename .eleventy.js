@@ -5,11 +5,11 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 module.exports = (config) => {
     // This enable all the dependency libraries inside the `assets` folder
     config.addPassthroughCopy({
-        "node_modules/reveal.js/dist": "assets/reveal/",
+        "node_modules/reveal.js/docs": "assets/reveal/",
         "node_modules/reveal.js/plugin": "assets/reveal/plugin",
     });
 
-    // This copies anything from `src/images` into `dist/images`.
+    // This copies anything from `src/images` into `docs/images`.
     // Call it using <img src="images/my-image.jpg" />
     config.addPassthroughCopy("./src/images/");
     config.addPassthroughCopy("./src/style/");
@@ -33,7 +33,7 @@ module.exports = (config) => {
     config.addPlugin(pluginRss);
 
     config.setBrowserSyncConfig({  callbacks: {ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('dist/404.html');
+        const content_404 = fs.readFileSync('docs/404.html');
         browserSync.addMiddleware("*", (req, res) => {               
             res.write(content_404);        
             res.end();      
@@ -49,7 +49,7 @@ module.exports = (config) => {
 
         dir: {
             input: "src",
-            output: "dist",
+            output: "docs",
         },
     };
 };
