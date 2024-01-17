@@ -41,7 +41,8 @@
                  {% if pack.art.rotate %} rotate-90  {%endif%}">
                 </div>
 
-                <img src="" class="rounded-2xl ART_IMAGE aspect-card 
+                <img src 
+                 class="rounded-2xl ART_IMAGE aspect-card 
                 {% if pack.art.rotate %} rotate-90  {%endif%}">
             </div>
         </div>
@@ -110,7 +111,12 @@ hover:z-50 hover:shadow-xl hover:rotate-6 duration-700
                         {%endif%}
                         <div class="w-full aspect-card rounded-xl">
                         
-                            <img class="FrontIMG w-full {%if i.cards|length < 4 %}rounded-3xl{% else %}rounded-xl {%endif%}" >
+                            <img src
+                            onerror="populateCard('{{ pack.name|slugify +"-"+ pack.set + "_" +card.nr}}')"
+                            class="FrontIMG w-full
+                                {%if i.cards|length < 4 %}rounded-3xl
+                                {% else %}rounded-xl
+                                {%endif%}" >
                         
                         </div>
                         </a>

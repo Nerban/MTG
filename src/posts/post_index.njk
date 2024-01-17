@@ -1,0 +1,9 @@
+---
+layout: "layouts/base.njk"
+permalink: "/posts/"
+eleventyExcludeFromCollections: true
+---
+
+{%for post in collections.posts%}
+<div class="w-5 bg-emerald-500 aspect-square m-1">{{post.date.toUTCString()}}</div>
+{%endfor%}
