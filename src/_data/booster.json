@@ -3,6 +3,60 @@
         "name":"Streets of New Capenna",
         "published":true,
         "set":"snc",
+        "nr":4,
+        "tags":["boosterpack","snc","set-booster"],
+        "id":"snc-04",
+        "date":"2024-01-22",
+        "art":
+        {   
+            "foil": false,
+            "rotate": true,
+            "nr":"34",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": false, "nr":"272", "new":true},
+                    {"foil": false, "nr":"176" , "new":true},
+                    {"foil": false, "nr":"140", "new":true},
+                    {"foil": false, "nr":"9" , "new":true},
+                    {"foil": false, "nr":"142" },
+                    {"foil": false, "nr":"235"},
+                    {"foil": false, "nr":"61", "new":true},
+                    {"foil": false, "nr":"51", "new":true}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"326", "new":true}
+                ]
+            },
+            {
+                "head": "Showcase",
+                "cards": [
+                    {"foil": false, "nr":"303"}
+                ]
+            },
+            {
+                "head": "Rare",
+                "cards": [
+                    {"foil": false, "nr":"148", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"64", "new":true}
+                ]
+            }
+        ]
+    },
+    {
+        "name":"Streets of New Capenna",
+        "published":true,
+        "set":"snc",
         "nr":3,
         "tags":["boosterpack","snc","set-booster"],
         "id":"snc-03",
