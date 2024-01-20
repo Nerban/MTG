@@ -3,6 +3,66 @@
         "name":"Streets of New Capenna",
         "published":true,
         "set":"snc",
+        "nr":3,
+        "tags":["boosterpack","snc","set-booster"],
+        "id":"snc-03",
+        "date":"2024-01-15",
+        "art":
+        {   
+            "foil": false,
+            "rotate": false,
+            "nr":"22",
+            "new":true
+        },
+        "multiple":[
+            {
+                "head": "Commons",
+                "cards": [
+                    {"foil": false, "nr":"270", "new":true},
+                    {"foil": false, "nr":"4" , "new":true},
+                    {"foil": false, "nr":"91", "new":true},
+                    {"foil": false, "nr":"32" , "new":true},
+                    {"foil": false, "nr":"3" , "new":true},
+                    {"foil": false, "nr":"142", "new":true},
+                    {"foil": false, "nr":"235", "new":true},
+                    {"foil": false, "nr":"352"}]
+            },
+            {
+                "head": "Wildcard",
+                "cards": [
+                    {"foil": false, "nr":"304", "new":true}
+                ]
+            },
+            {
+                "head": "Showcase",
+                "cards": [
+                    {"foil": false, "nr":"303"  , "new":true }
+                ]
+            },
+            {
+                "head": "Rare",
+                "cards": [
+                    {"foil": false, "nr":"112", "new":true}
+                ]
+            },
+            {
+                "head": "Foil Card",
+                "cards": [
+                    {"foil": true,  "nr":"132", "new":true}
+                ]
+            },
+            {
+                "head": "Token",
+                "cards": [
+                    {"foil": true,  "nr":"16", "set":"tsnc","new":true}
+                ]
+            }
+        ]
+    },
+    {
+        "name":"Streets of New Capenna",
+        "published":true,
+        "set":"snc",
         "nr":2,
         "tags":["boosterpack","snc","set-booster"],
         "id":"snc-02",
