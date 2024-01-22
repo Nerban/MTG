@@ -1,8 +1,24 @@
 ---
 layout: "layouts/base.njk"
-title: "Ashen Reaper"
+title: "The Invasion of Azgol"
+mainImg: "/images/posts/azgol/title.webp"
+desc: "Dive into the rich lore of Azgol with a detailed look at MTG's 'Invasion of Azgol' and 'The Ashen Reaper.' Join us as we explore the art, mechanics, and stories of these cards, set against the backdrop of the 'March of the Machine.' Experience the saga of transformation, conflict, and the eternal cycle of destruction and rebirth in the magical world of Magic: The Gathering."
 eleventyComputed:
     permalink: "posts/{{title | slugify}}"
 ---
 
+<div class=" text-rose-50  aspect-[8/3] bg-center flex 
+w-full overflow-hidden bg-[url('/MTG/images/posts/azgol/title.webp')] mt-6">
+    <div class="bg-gradient-to-t w-full flex items-end justify-center from-emerald-950 pb-52 to-transparent rounded-b-lg  pt-2">
+        <h1 class="drop-shadow-lg text-9xl 
+         backdrop-blur-sm backdrop-opacity-20">{{title}}
+         </h1>
+    </div>
+    
+</div>
+
+<div class="w-2/3 mx-auto prose-xl
+prose-p:text-rose-50  prose-p:text-xl
+prose-h2:text-emerald-500">
     {{content | safe}}
+</div>

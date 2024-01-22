@@ -5,5 +5,5 @@ eleventyExcludeFromCollections: true
 ---
 
 {%for post in collections.posts%}
-<div class="w-5 bg-emerald-500 aspect-square m-1">{{post.date.toUTCString()}}</div>
+<a href="{{post.url | url}}"><div class="w-5 bg-emerald-500 aspect-square m-1">{{post.date.toUTCString()}}</div></a>
 {%endfor%}

@@ -64,7 +64,9 @@ module.exports = {
 
     },
   },
-  plugins: [Myclass],
+  plugins: [
+    Myclass,
+    require('@tailwindcss/typography')],
   content: [
     // Example content paths...
     './dist/**/*.html',
