@@ -869,10 +869,6 @@ video {
   margin-bottom: auto;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -991,10 +987,6 @@ video {
 
 .w-3\/5 {
   width: 60%;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .w-full {
@@ -1225,6 +1217,10 @@ video {
   background-image: url('/MTG/images/posts/azgol/title.webp');
 }
 
+.bg-\[url\(\'\{\{post\.data\.mainImg\|url\}\}\'\)\] {
+  background-image: url('{{post.data.mainImg|url}}');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1352,6 +1348,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
@@ -1616,10 +1617,6 @@ video {
 .prose-h2\:text-emerald-500 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
-}
-
-.prose-p\:font-mono :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .prose-p\:text-xl :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {

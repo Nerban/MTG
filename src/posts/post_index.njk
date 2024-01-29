@@ -3,7 +3,13 @@ layout: "layouts/base.njk"
 permalink: "/posts/"
 eleventyExcludeFromCollections: true
 ---
-
+<div class="w-full">
 {%for post in collections.posts%}
-<a href="{{post.url | url}}"><div class="w-5 bg-emerald-500 aspect-square m-1">{{post.date.toUTCString()}}</div></a>
+<a href="{{post.url | url}}" class="w-min mx-auto">
+<div class="w-2/3 mx-auto text-center p-4 rounded-lg bg-emerald-500 aspect-text-box m-1 bg-[url('{{post.data.mainImg|url}}')] bg-center">
+
+<span class="text-rose-50 text-5xl">{{post.data.title}}</span>
+</div>
+</a>
 {%endfor%}
+</div>

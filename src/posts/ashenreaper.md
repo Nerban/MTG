@@ -1,4 +1,6 @@
 ---
+title: "The Invasion of Azgol"
+mainImg: "/images/posts/azgol/title.webp"
 layout: "layouts/post.njk"
 tags: "posts"
 ---
