@@ -61,7 +61,7 @@
     },
     {
         "name":"Streets of New Capenna",
-        "published":false,
+        "published":true,
         "set":"snc",
         "nr":6,
         "tags":["boosterpack","snc","set-booster"],
