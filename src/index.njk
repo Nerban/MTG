@@ -6,11 +6,11 @@ permalink: "/index.html"
 ---
 
 <div 
-class="w-10/12 mx-auto  mt-10 flex-wrap flex-row justify-start flex "> 
+class="w-10/12 mx-auto mt-10 flex-wrap flex-row justify-start flex "> 
 
   {%for item in booster %}
   {%if item.published%}
-    <a class="text-rose-50 drop-shadow-md group hover:rotate-6 hover:scale-105 duration-200 p-6 w-1/4 font-bold my-5 flex-col flex"
+    <a class="text-rose-50 drop-shadow-md group hover:rotate-6 hover:scale-105 duration-200 p-6 w-1/4 font-bold flex-col flex"
     href="packs/{{ item.id | slugify}}">
     
 
