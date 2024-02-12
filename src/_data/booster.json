@@ -1,7 +1,126 @@
-[  
+[{
+    "name":"Streets of New Capenna",
+    "published":false,
+    "set":"snc",
+    "nr":9,
+    "tags":["boosterpack","snc","set-booster"],
+    "id":"snc-09",
+    "date":"2024-02-26",
+    "art":
+    {   
+        "foil": false,
+        "rotate": true,
+        "nr":"9",
+        "new":true
+    },
+    "multiple":[
+        {
+            "head": "Commons",
+            "cards": [
+                {"foil": false, "nr":"276", "new":true},
+                {"foil": false, "nr":"78" , "new":true},
+                {"foil": false, "nr":"84", "new":true},
+                {"foil": false, "nr":"76" , "new":true},
+                {"foil": false, "nr":"241", "new":true },
+                {"foil": false, "nr":"161", "new":true},
+                {"foil": false, "nr":"135", "new":true},
+                {"foil": false, "nr":"220", "new":true}]
+        },
+        {
+            "head": "Wildcard",
+            "cards": [
+                {"foil": false, "nr":"319"}
+            ]
+        },
+        {
+            "head": "Showcase",
+            "cards": [
+                {"foil": false, "nr":"309",  "new":true}
+            ]
+        },
+        {
+            "head": "Rare",
+            "cards": [
+                {"foil": false, "nr":"134", "new":true}
+            ]
+        },
+        {
+            "head": "Foil Card",
+            "cards": [
+                {"foil": true,  "nr":"91"}
+            ]
+        },
+        {
+            "head": "Token",
+            "cards": [
+                {"foil": false,  "nr":"5", "set":"tsnc", "new":true}
+            ]
+        }
+    ]
+    },
     {
     "name":"Streets of New Capenna",
     "published":false,
+    "set":"snc",
+    "nr":8,
+    "tags":["boosterpack","snc","set-booster"],
+    "id":"snc-08",
+    "date":"2024-02-19",
+    "art":
+    {   
+        "foil": false,
+        "rotate": true,
+        "nr":"80",
+        "new":true
+    },
+    "multiple":[
+        {
+            "head": "Commons",
+            "cards": [
+                {"foil": true, "nr":"262"},
+                {"foil": false, "nr":"239" , "new":true},
+                {"foil": false, "nr":"36", "new":true},
+                {"foil": false, "nr":"19" , "new":true},
+                {"foil": false, "nr":"121", "new":true },
+                {"foil": false, "nr":"156"},
+                {"foil": false, "nr":"128", "new":true},
+                {"foil": false, "nr":"16", "new":true}]
+        },
+        {
+            "head": "Wildcard",
+            "cards": [
+                {"foil": false, "nr":"302", "new":true}
+            ]
+        },
+        {
+            "head": "Showcase",
+            "cards": [
+                {"foil": false, "nr":"323",  "new":true}
+            ]
+        },
+        {
+            "head": "Rare",
+            "cards": [
+                {"foil": false, "nr":"261", "new":true}
+            ]
+        },
+        {
+            "head": "Foil Card",
+            "cards": [
+                {"foil": true,  "nr":"139"}
+            ]
+        },
+        {
+            "head": "Token",
+            "cards": [
+                {"foil": false,  "nr":"17", "set":"tsnc"}
+            ]
+        }
+    ]
+    },
+    {
+    "name":"Streets of New Capenna",
+    "published":true,
     "set":"snc",
     "nr":7,
     "tags":["boosterpack","snc","set-booster"],
@@ -52,7 +171,7 @@
             ]
         },
         {
-            "head": "Token",
+            "head": "Universe Within",
             "cards": [
                 {"foil": false,  "nr":"8", "set":"slx", "new":true}
             ]
@@ -346,7 +465,7 @@
                 ]
             },
             {
-                "head": "Special Guest",
+                "head": "Universe Within",
                 "cards": [
                     {"foil": true,  "nr":"7", "set":"slx","new":true}
                 ]
