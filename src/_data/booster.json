@@ -1,4 +1,64 @@
 [{
+    "name":"New Phyrexia: All will be One",
+    "published":false,
+    "set":"one",
+    "nr":1,
+    "tags":["boosterpack","one","col-booster"],
+    "id":"one-01",
+    "date":"2024-02-26",
+    "art":
+    {   
+        "foil": false,
+        "rotate": true,
+        "nr":"9",
+        "new":true
+    },
+    "multiple":[
+        {
+            "head": "Commons",
+            "cards": [
+                {"foil": false, "nr":"276", "new":true},
+                {"foil": false, "nr":"78" , "new":true},
+                {"foil": false, "nr":"84", "new":true},
+                {"foil": false, "nr":"76" , "new":true},
+                {"foil": false, "nr":"241", "new":true },
+                {"foil": false, "nr":"161", "new":true},
+                {"foil": false, "nr":"135", "new":true},
+                {"foil": false, "nr":"220", "new":true}]
+        },
+        {
+            "head": "Wildcard",
+            "cards": [
+                {"foil": false, "nr":"319"}
+            ]
+        },
+        {
+            "head": "Showcase",
+            "cards": [
+                {"foil": false, "nr":"309",  "new":true}
+            ]
+        },
+        {
+            "head": "Rare",
+            "cards": [
+                {"foil": false, "nr":"134", "new":true}
+            ]
+        },
+        {
+            "head": "Foil Card",
+            "cards": [
+                {"foil": true,  "nr":"91"}
+            ]
+        },
+        {
+            "head": "Token",
+            "cards": [
+                {"foil": false,  "nr":"5", "set":"tsnc", "new":true}
+            ]
+        }
+    ]
+    },
+    {
     "name":"Streets of New Capenna",
     "published":false,
     "set":"snc",
@@ -60,7 +120,7 @@
     },
     {
     "name":"Streets of New Capenna",
-    "published":false,
+    "published":true,
     "set":"snc",
     "nr":8,
     "tags":["boosterpack","snc","set-booster"],

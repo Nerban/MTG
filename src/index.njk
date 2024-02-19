@@ -23,6 +23,7 @@ class="w-10/12 mx-auto mt-10 flex-wrap flex-row justify-start flex ">
     <div class="w-11/12 mx-auto mt-1 font-mono text-lg z-10">
     {{item.name}} - {{item.nr}} <br>
     {%if "set-booster" in item.tags%}<span class="absolute font-extrathin text-emerald-400 text-xs">set-booster</span>{%endif%}
+    {%if "col-booster" in item.tags%}<span class="absolute font-extrathin text-emerald-400 text-xs">collectors-booster</span>{%endif%}
     </div>
     
       <div class=" border-emerald-300/25 p-4 w-10/12 z-10 aspect-square mx-auto ">
